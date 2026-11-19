@@ -50,7 +50,7 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 }
 
 function App() {
-  const [activeSection, setActiveSection] = useState("about");
+  const [activeSection, setActiveSection] = useState("");
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -73,7 +73,7 @@ function App() {
   }, []);
 
   const copyEmail = async () => {
-    await navigator.clipboard.writeText("hello@alexmorgan.dev");
+    await navigator.clipboard.writeText("hello@alexmorgan.dev").catch(() => {});
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   };
@@ -124,37 +124,25 @@ function App() {
                   <p>
                     <b>$</b> whoami
                   </p>
-                  <div>
-                    a software engineer who likes simple, durable things.
-                    <i />
-                  </div>
+                  <div>a software engineer who likes simple, durable things.</div>
                 </div>
                 <div className="command">
                   <p>
                     <b>$</b> cat focus.txt
                   </p>
-                  <div>
-                    distributed systems · developer tooling · clean UI
-                    <i />
-                  </div>
+                  <div>distributed systems · developer tooling · clean UI</div>
                 </div>
                 <div className="command">
                   <p>
                     <b>$</b> ls skills/
                   </p>
-                  <div>
-                    typescript go postgres react rust node
-                    <i />
-                  </div>
+                  <div>typescript go postgres react rust node</div>
                 </div>
                 <div className="command">
                   <p>
                     <b>$</b> ./say_hello.sh
                   </p>
-                  <div>
-                    thanks for stopping by — scroll down to see my work.
-                    <i />
-                  </div>
+                  <div>thanks for stopping by — scroll down to see my work.</div>
                 </div>
                 <p className="prompt">
                   <b>$</b> <i className="cursor" />
@@ -256,7 +244,7 @@ function App() {
                 recommendation.
               </p>
               <p className="comment">// i read everything. replies usually within a day or two.</p>
-              <button className="email-button" onClick={copyEmail}>
+              <button type="button" className="email-button" onClick={copyEmail} aria-live="polite">
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M3 6.5h18v12H3zM3.5 7l8.5 7 8.5-7" />
                 </svg>

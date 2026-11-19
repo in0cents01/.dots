@@ -1,5 +1,6 @@
 {
-  "description": "A simple greeting experience that welcomes visitors with a friendly hello.",
+  "title": "alexmorgan — software engineer",
+  "description": "Portfolio of alexmorgan, a software engineer working on distributed systems, developer tooling, and clean UI.",
   "robots": {
     "index": false
   },
