@@ -1049,8 +1049,4 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
-      jiti: 2.6.1 
-
-
-
-
+      jiti: 2.6.1
