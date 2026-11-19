@@ -1,5 +1,6 @@
 import { chromium } from "playwright-core";
 
+
 const EXEC = "/home/inocents/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome";
 const URL = "http://localhost:5173/";
 
