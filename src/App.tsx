@@ -98,7 +98,7 @@ function App() {
         <section className="hero grid-bg" id="top">
           <div className="hero-content">
             <p className="eyebrow">
-              <span className="status-dot" /> hello, world
+              <span className="status-dot" /> hello ,
             </p>
             <h1>
               i build <span>software</span>
@@ -106,7 +106,7 @@ function App() {
               that stays out of the way.
             </h1>
             <p className="hero-subtitle">
-              software engineer · distributed systems · developer
+              software developer· distributed systems · developer
               <br className="desktop-break" /> tooling · clean UI
             </p>
 
@@ -124,7 +124,7 @@ function App() {
                   <p>
                     <b>$</b> whoami
                   </p>
-                  <div>a software engineer who likes simple, durable things.</div>
+                  <div>a software devloper  , </div>
                 </div>
                 <div className="command">
                   <p>
@@ -136,7 +136,7 @@ function App() {
                   <p>
                     <b>$</b> ls skills/
                   </p>
-                  <div>typescript go postgres react rust node</div>
+                  <div>typescript c/c++ java </div>
                 </div>
                 <div className="command">
                   <p>
@@ -160,28 +160,22 @@ function App() {
           <div className="about-grid">
             <div className="about-copy">
               <p>
-                I&apos;m a software engineer based in <em>somewhere on the internet</em>. I care
-                about systems that stay simple as they grow, interfaces that get out of the way, and
-                code that reads like it was written for a friend.
+                I&apos;m  <em>That Sothoun</em>. Now I'm Second Year in colloege  , I study in RUPP  , my Major  Imformation Technology Engineering (ITE).
               </p>
               <p>
                 Lately I&apos;ve been building developer tooling and small distributed services.
                 Before that I worked on data pipelines and a handful of side projects that never
                 quite got the landing page they deserved.
               </p>
-              <p>
-                When I&apos;m not at the keyboard you can find me reading sci-fi, over-engineering
-                my dotfiles, or trying to convince people that monospace fonts are a lifestyle.
-              </p>
               <p className="comment">// currently</p>
               <pre>
                 <code>
                   <span>const</span> now = {"{\n"}
                   {"  "}role: <b>&quot;software engineer&quot;</b>,{"\n"}
-                  {"  "}stack: [<b>&quot;ts&quot;</b>, <b>&quot;go&quot;</b>,{" "}
-                  <b>&quot;postgres&quot;</b>, <b>&quot;rust&quot;</b>],{"\n"}
+                  {"  "}stack: [<b>&quot;ts&quot;</b>, <b>&quot;c/c++&quot;</b>,{" "}
+                  <b>&quot;java&quot;</b>, <b>&quot;rust&quot;</b>],{"\n"}
                   {"  "}status: <b>&quot;open to interesting work&quot;</b>,{"\n"}
-                  {"  "}location: <b>&quot;remote&quot;</b>,{"\n"}
+                  {"  "}location: <b>&quot;Phnom Penh&quot;</b>,{"\n"}
                   {"}"}
                 </code>
               </pre>
@@ -189,22 +183,22 @@ function App() {
             <aside className="stats">
               <p className="comment">// stats</p>
               <div className="stat-card">
-                <strong>8+</strong>
+                <strong>2</strong>
                 <span>years writing code</span>
               </div>
               <div className="stat-card">
-                <strong>40+</strong>
+                <strong>0</strong>
                 <span>repos shipped</span>
               </div>
               <div className="stat-card">
-                <strong>3</strong>
+                <strong>0</strong>
                 <span>coffee/day</span>
               </div>
             </aside>
           </div>
         </section>
 
-        <section className="section projects-section grid-bg" id="projects">
+        {/* <section className="section projects-section grid-bg" id="projects">
           <SectionTitle>projects</SectionTitle>
           <p className="section-intro">
             // a selection of things i&apos;ve built. run <span>ls -la</span> for the rest.
@@ -233,7 +227,7 @@ function App() {
               </a>
             ))}
           </div>
-        </section>
+        </section> */}
 
         <section className="section contact-section grid-bg" id="contact">
           <SectionTitle>contact</SectionTitle>
@@ -248,7 +242,7 @@ function App() {
                 <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M3 6.5h18v12H3zM3.5 7l8.5 7 8.5-7" />
                 </svg>
-                {copied ? "copied to clipboard" : "hello@alexmorgan.dev"}
+                {copied ? "copied to clipboard" : "thatsothounctrl01@gmail.com"}
                 <svg className="copy-icon" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="8" y="8" width="11" height="11" rx="2" />
                   <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" />
@@ -257,18 +251,14 @@ function App() {
             </div>
             <div className="socials">
               <p className="comment">// elsewhere</p>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a href="https://github.com/in0cents01" target="_blank" rel="noreferrer">
                 <span>⌘ &nbsp; github</span>
-                <small>@alexmorgan</small>
+                <small>@in0cents01</small>
               </a>
-              <a href="https://x.com" target="_blank" rel="noreferrer">
-                <span>𝕏 &nbsp; twitter</span>
-                <small>@alexmorgan</small>
-              </a>
-              <a href="mailto:hello@alexmorgan.dev">
-                <span>✉ &nbsp; email</span>
-                <small>hello@alexmorgan.dev</small>
-              </a>
+              <a href="mailto:thatsothounctrl01@gmail.com">
+               <span>✉ &nbsp; email</span>
+                <small>@thatsothoun</small>
+                </a>
             </div>
           </div>
         </section>
@@ -283,7 +273,7 @@ function App() {
     </div>
   );
 }
- 
+
 
 
 export default App;
