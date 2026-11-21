@@ -2,38 +2,38 @@ import { useEffect, useState } from "react";
 
 const projects = [
   {
-    name: "kestrel",
-    type: "tiny task runner",
+    name: ".dotfiles",
+    type: "neovim config  , terminal",
     description:
-      "A minimal job queue with a single binary, a tiny API, and Postgres as the only dependency.",
-    tags: ["go", "postgres", "redis"],
+      "I build this dotfiles because i wanna make it for easy use  , exactly i use neovim  every day  , and I love terminal.",
+    tags: ["lua", "shell", "scripts"],
     status: "live",
   },
-  {
-    name: "lumen",
-    type: "markdown notebooks",
-    description:
-      "A local-first notebook for technical writing. Renders markdown, runs code blocks, and stores everything as plain files.",
-    tags: ["typescript", "react", "tauri"],
-    status: "wip",
-  },
-  {
-    name: "driftwood",
-    type: "static site generator",
-    description:
-      "A zero-config static site generator that compiles a folder of markdown into a fast, accessible site in under 200ms.",
-    tags: ["rust", "mdx"],
-    status: "live",
-  },
-  {
-    name: "porthole",
-    type: "local tunnel",
-    description:
-      "Expose a local dev server to the internet with a single command. Self-hostable relay, no account required.",
-    tags: ["go", "websocket"],
-    status: "archived",
-    featured: true,
-  },
+  // {
+  //   name: "lumen",
+  //   type: "markdown notebooks",
+  //   description:
+  //     "A local-first notebook for technical writing. Renders markdown, runs code blocks, and stores everything as plain files.",
+  //   tags: ["typescript", "react", "tauri"],
+  //   status: "wip",
+  // },
+  // {
+  //   name: "driftwood",
+  //   type: "static site generator",
+  //   description:
+  //     "A zero-config static site generator that compiles a folder of markdown into a fast, accessible site in under 200ms.",
+  //   tags: ["rust", "mdx"],
+  //   status: "live",
+  // },
+  // {
+  //   name: "porthole",
+  //   type: "local tunnel",
+  //   description:
+  //     "Expose a local dev server to the internet with a single command. Self-hostable relay, no account required.",
+  //   tags: ["go", "websocket"],
+  //   status: "archived",
+  //   featured: true,
+  // },
 ];
 
 const navItems = ["about", "projects", "contact"] as const;
@@ -73,7 +73,7 @@ function App() {
   }, []);
 
   const copyEmail = async () => {
-    await navigator.clipboard.writeText("hello@alexmorgan.dev").catch(() => {});
+    await navigator.clipboard.writeText("thatsothounctrl01@gmail.com").catch(() => {});
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   };
@@ -106,7 +106,7 @@ function App() {
               that stays out of the way.
             </h1>
             <p className="hero-subtitle">
-              software developer· distributed systems · developer
+              software developer· system design · developer
               <br className="desktop-break" /> tooling · clean UI
             </p>
 
@@ -130,7 +130,7 @@ function App() {
                   <p>
                     <b>$</b> cat focus.txt
                   </p>
-                  <div>distributed systems · developer tooling · clean UI</div>
+                  <div>system design · developer tooling · clean UI</div>
                 </div>
                 <div className="command">
                   <p>
@@ -171,7 +171,7 @@ function App() {
               <pre>
                 <code>
                   <span>const</span> now = {"{\n"}
-                  {"  "}role: <b>&quot;software engineer&quot;</b>,{"\n"}
+                  {"  "}role: <b>&quot;software developer&quot;</b>,{"\n"}
                   {"  "}stack: [<b>&quot;ts&quot;</b>, <b>&quot;c/c++&quot;</b>,{" "}
                   <b>&quot;java&quot;</b>, <b>&quot;rust&quot;</b>],{"\n"}
                   {"  "}status: <b>&quot;open to interesting work&quot;</b>,{"\n"}
@@ -198,10 +198,9 @@ function App() {
           </div>
         </section>
 
-        {/* <section className="section projects-section grid-bg" id="projects">
+         <section className="section projects-section grid-bg" id="projects">
           <SectionTitle>projects</SectionTitle>
           <p className="section-intro">
-            // a selection of things i&apos;ve built. run <span>ls -la</span> for the rest.
           </p>
           <div className="project-grid">
             {projects.map((project) => (
@@ -227,7 +226,7 @@ function App() {
               </a>
             ))}
           </div>
-        </section> */}
+        </section>
 
         <section className="section contact-section grid-bg" id="contact">
           <SectionTitle>contact</SectionTitle>
