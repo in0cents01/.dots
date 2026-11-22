@@ -205,7 +205,9 @@ function App() {
           <div className="project-grid">
             {projects.map((project) => (
               <a
-                href="#contact"
+                href={`https://github.com/in0cents01/${project.name}`}
+                target="_blank"
+                rel="noreferrer"
                 className={`project-card${project.featured ? " featured" : ""}`}
                 key={project.name}
               >
